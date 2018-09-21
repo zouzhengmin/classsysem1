@@ -1,0 +1,6 @@
+<h1>修改班级</h1>
+<form action='/myclasses/<%=params[:id]%>' method=POST>
+  <input type='hidden' name='_method' value='put'>
+  班级名称:<input type='text' name='name'><br>
+  <input type='submit' value='提交'>
+</form>

@@ -1,0 +1,4 @@
+class Myclass < ApplicationRecord
+
+
+end

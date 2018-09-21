@@ -1,0 +1,21 @@
+Myclass#index
+
+<table>
+  <tr>
+    <td>班级ID</td>
+    <td>班级名称</td>
+  </tr>
+  <% @myclasses.each do |myclass| %>
+    <tr>
+      <td><%= myclass.id %></td>
+      <td><%= myclass.name %></td>
+      <td><%= link_to '查看班级', myclass %></td>
+      <td><%= link_to '修改班级', edit_myclass_path(myclass) %></td>
+      <td><%= link_to '删除班级', myclass, method: :delete %></td>      
+
+    </tr>
+  <% end %>
+    <tr>
+      <td><%= link_to '添加班级', new_myclass_path %></td>
+    </tr>
+</table>
